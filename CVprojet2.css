@@ -12,6 +12,20 @@ aside {
     margin: 0em;
 }
 
+aside h3
+{
+    font-size: 1em;
+    font-weight: normal;
+    margin-bottom: 0em;
+    padding-bottom: 0em;
+}
+
+p
+{
+    margin-top: 0em;
+    padding-top: 0em;
+}
+
 .photo
 {
     display: flex;
@@ -34,14 +48,19 @@ aside {
     justify-content: space-around;
 }
 
-.loisirs img
+.loisirs i
 {
-    width: 25%;
+    font-size: 300%;
+    color: #000000;
 }
 
 img
 {
     width: 70%;
+}
+
+i {
+    color: #4CAF50;
 }
 
 section
@@ -83,9 +102,9 @@ h3 {
     border-bottom: 1px solid #4CAF50;
 }
 
-h3 img
+h3 i
 {
-    width: 5%;
+    font-size: 100%;
     margin-right: 1em;
 }
 
