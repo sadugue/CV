@@ -10,6 +10,7 @@ aside {
     background-color: #4CAF50;
     padding: 0%;
     margin: 0em;
+    min-width: 200px;
 }
 
 aside h3
@@ -40,12 +41,21 @@ p
     margin: 3em;
 }
 
+.contacts:nth-child(4)
+{
+    align-self: flex-end;
+}
+
+.loisirs {
+    align-self: flex-end;
+}
+
 .moi {
     margin: 3em;
 }
 
 .loisirs {
-    margin: 3em;
+
     display: flex;
     justify-content: space-around;
 }
@@ -95,6 +105,7 @@ aside h2 {
     background-color: #263238;
     color: #4CAF50;
     padding: 0em;
+    margin-bottom: 1em;
     text-align: center;
     font-size: 2em;
     
@@ -137,15 +148,11 @@ header
     margin: 0em;
 }
 
-.formation1 {
+.formation {
     display: flex;
     flex-direction: row;
 }
 
-.formation2 {
-    display: flex;
-    flex-direction: row;
-}
 
 .compétences {
     display: flex;
@@ -160,40 +167,24 @@ header
 
 
 
-.datelieu1 {
+.datelieu {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     margin-right: 5em;
+    width: 8em;
 }
 
-.datelieu2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    margin-right: 5em;
-}
 
-.datelieu3 {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    margin-right: 12em;
-}
 
-.quoi1 {
+.quoi {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     margin-left: 5em;
 }
 
-.quoi2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    margin-left: 5em;
-}
+
 
 .SoftsSkills
 {
@@ -213,7 +204,7 @@ li
     list-style: none;
 }
 
-p
+ctct
 {
     margin-bottom: 3em;
 }
@@ -221,4 +212,68 @@ p
 a
 {
         color: #000000;
+}
+
+@media screen and (max-width: 991px)
+{
+    .loisirs
+    {
+        display:flex;
+        flex-direction: column;
+    }
+
+    formations i
+    {
+        display:none;
+    }
+
+
+    aside i
+    {
+        text-align: center;
+        margin: 1em;
+    }
+}
+
+
+@media screen and (max-width: 768px)
+{
+    .photo
+    {
+        display:none;
+    }
+
+    body
+    {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    aside
+    {
+        width:100%;
+    }
+
+
+    .formation {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .compétences {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .expériences {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .datelieu
+    {
+        display:none;
+    }
+
 }

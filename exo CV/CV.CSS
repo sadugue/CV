@@ -1,0 +1,121 @@
+h1{
+	text-align : center;
+	border:2px green solid;
+	box-shadow: 6px 6px 6px;
+	margin: 2em;
+}
+
+h2{
+	color: #AA00AA;
+	border-bottom: 2px #AA00AA solid;
+}
+
+body
+{
+	display: flex;
+}
+
+@font-face{
+	font-family: 'A';
+	src: url('SF-Wonder-Comic/SF_Wonder_Comic_Italic.ttf');
+}
+
+body
+{
+	background-image: url("images.jpg");
+	opacity:1;
+	font-family: A;
+	margin:0em;
+	padding: 0em;
+	justify-content: space-between;
+}
+
+
+.qui
+{
+	display:flex;
+	width: 603px;
+	height: 1200px;
+	background-color: #1FDEC2;
+	flex-direction: column;
+	padding: 0em;
+	margin: 0em;
+	text-align: center;
+	min-width: 500px;
+}
+
+.droite
+{
+	display:flex;
+	flex-direction: column;
+	margin: 0em;
+	padding: 0em;
+}
+
+h4
+{
+	color: white;
+	text-decoration: underline;
+	background-color: black;
+	padding: 0px;
+}
+
+a
+{
+	color: #AA00AA;
+}
+
+h3
+{
+	border-bottom:1px black solid;
+	margin: 1em;
+}
+
+ul
+{
+	list-style-image: url("flecheblanchedroite.png");
+}
+
+.CV h2
+{
+	font-weight: bold;
+	color: black;
+	border-bottom: 2px black solid;
+	font-size: 300%;
+	margin:0em;
+	padding: 2.05em;
+}
+
+.pourquoi
+{
+	margin: 3em;
+}
+
+.CV
+{
+	margin: 0em;
+	padding: 0em;
+	background-color: #AA00AA;
+}
+
+@media screen and (max-width: 1200px)
+{
+	body
+	{
+		display: flex;
+		flex-direction: column;
+	}
+
+	.qui
+	{
+		width: auto;
+		height: auto;
+		color: #AA00AA;
+	}
+
+	.qui .retire
+	{
+		display: none;
+	}
+}
+
